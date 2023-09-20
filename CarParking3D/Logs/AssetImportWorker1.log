@@ -1,0 +1,468 @@
+Unity Editor version:    2022.3.9f1 (ea401c316338)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.5 (Build 22G74)
+Darwin version:          22.6.0
+Architecture:            x86_64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+/Users/orkun.hacilar/Documents/GitHub/CarParking3D/CarParking3D
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+50445
+Successfully changed project path to: /Users/orkun.hacilar/Documents/GitHub/CarParking3D/CarParking3D
+/Users/orkun.hacilar/Documents/GitHub/CarParking3D/CarParking3D
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [140704295134976] Host "[IP] 192.168.1.20 [Port] 0 [Flags] 2 [Guid] 69233889 [EditorId] 69233889 [Version] 1048832 [Id] OSXEditor(0,orkun-mbp) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [140704295134976] Host "[IP] 192.168.1.20 [Port] 0 [Flags] 2 [Guid] 69233889 [EditorId] 69233889 [Version] 1048832 [Id] OSXEditor(0,orkun-mbp) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 3.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.9f1 (ea401c316338)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/orkun.hacilar/Documents/GitHub/CarParking3D/CarParking3D/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Mi Monitor preferred device: AMD Radeon Pro 5300M (high power)
+Metal devices available: 2
+0: AMD Radeon Pro 5300M (high power)
+1: Intel(R) UHD Graphics 630 (low power)
+Using device AMD Radeon Pro 5300M (high power)
+Initializing Metal device caps: AMD Radeon Pro 5300M
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56137
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.9f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.002287 seconds.
+- Loaded All Assemblies, in  0.449 seconds
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 127 ms
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.556 seconds
+Domain Reload Profiling: 1006ms
+	BeginReloadAssembly (121ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (204ms)
+		LoadAssemblies (120ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (200ms)
+			TypeCache.Refresh (198ms)
+				TypeCache.ScanAssembly (179ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (556ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (475ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (292ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (127ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.738 seconds
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.618 seconds
+Domain Reload Profiling: 1357ms
+	BeginReloadAssembly (176ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (451ms)
+		LoadAssemblies (325ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (219ms)
+			TypeCache.Refresh (196ms)
+				TypeCache.ScanAssembly (177ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (619ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (408ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (306ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.08 seconds
+Refreshing native plugins compatible for Editor in 1.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3070 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (50.8 KB). Loaded Objects now: 3535.
+Memory consumption went from 121.6 MB to 121.5 MB.
+Total: 3.411108 ms (FindLiveObjects: 0.248704 ms CreateObjectMapping: 0.267869 ms MarkObjects: 2.778027 ms  DeleteObjects: 0.115802 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 23844.422806 seconds.
+  path: Assets/CarParkingBaslangicDosyalari
+  artifactKey: Guid(2d506ffe086c24a149a967d30dc17ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CarParkingBaslangicDosyalari using Guid(2d506ffe086c24a149a967d30dc17ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed6c25c0b9ffde3988d853e793615fa') in 0.001899 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Modeller
+  artifactKey: Guid(faeb468c5d96c41bda4d713e99318ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modeller using Guid(faeb468c5d96c41bda4d713e99318ce8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b5cd95853c654c917623d3744ad3f36') in 0.000268 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 484.934876 seconds.
+  path: Assets/Material/Zemin_serit.mat
+  artifactKey: Guid(146d1f5aecc4c41c49b28a30309a018f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Material/Zemin_serit.mat using Guid(146d1f5aecc4c41c49b28a30309a018f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'a20ebb9bbfed8a69d68f194883c5f124') in 0.167106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Simple Vehicle Pack/Materials/Cars_1.mat
+  artifactKey: Guid(d1609d52f4f81da40955e6165cb60e78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Materials/Cars_1.mat using Guid(d1609d52f4f81da40955e6165cb60e78) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '52da5bb7ecd7da2ceedc2235f71a1f9f') in 0.155382 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Mobile/Bus_1.prefab
+  artifactKey: Guid(6717c7c2d677a9f439f502029ec5b22a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Mobile/Bus_1.prefab using Guid(6717c7c2d677a9f439f502029ec5b22a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ea626215c5a4a6141faaac6ae0b5c36f') in 0.011097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Modeller/elmas.fbx
+  artifactKey: Guid(abe7da5d771894927b0f74d295e92224) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Modeller/elmas.fbx using Guid(abe7da5d771894927b0f74d295e92224) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c69f91d73a2aeabd58b08b809b6154d3') in 0.045560 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Simple Vehicle Pack/Models/Materials/No Name.mat
+  artifactKey: Guid(64cbce3e9cf6f7e4b889e606242e360c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Models/Materials/No Name.mat using Guid(64cbce3e9cf6f7e4b889e606242e360c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5cd5a1eeabf5889a3b507f45c1f8d65d') in 0.040741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/Simple Vehicle Pack/Models/car_1.FBX
+  artifactKey: Guid(75fac0ffc516dac4fb20ed28a0b923fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Models/car_1.FBX using Guid(75fac0ffc516dac4fb20ed28a0b923fd) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2d171783621a2653b49466cccb934e8c') in 0.020749 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Simple Vehicle Pack/Models/bus.FBX
+  artifactKey: Guid(7f4f24cb528cb884a874e5266f87c831) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Models/bus.FBX using Guid(7f4f24cb528cb884a874e5266f87c831) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0aec81efafb2cdaab3e4f1471417d1c3') in 0.018574 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Material/images/Gri.png
+  artifactKey: Guid(6617247e188bc4bbda56ea436839fac7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Material/images/Gri.png using Guid(6617247e188bc4bbda56ea436839fac7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'd40dfd9a38f6d400f47cc583f51d6fd1') in 0.068494 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Simple Vehicle Pack/Models/police_car.FBX
+  artifactKey: Guid(442255f864e16934790fbb3b49639885) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Models/police_car.FBX using Guid(442255f864e16934790fbb3b49639885) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '374d133e16a922ada7c8947de751055d') in 0.018687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Mobile/Taxi.prefab
+  artifactKey: Guid(6f993fa0f8fc9f045888054c717741b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Mobile/Taxi.prefab using Guid(6f993fa0f8fc9f045888054c717741b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '16650ed154ccecb7b7a8dd7188e82f2f') in 0.004084 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Material/images/Sari.png
+  artifactKey: Guid(7ed2cbb6758564c69b9d7c173f0626a5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Material/images/Sari.png using Guid(7ed2cbb6758564c69b9d7c173f0626a5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '26025ce808cc6d69c1bb3c6ddf1edc61') in 0.019477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000089 seconds.
+  path: Assets/Simple Vehicle Pack/Materials/Mobile/Bus_1.mat
+  artifactKey: Guid(a0b0c1668d6fad443b7e06fe182d9dc3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Materials/Mobile/Bus_1.mat using Guid(a0b0c1668d6fad443b7e06fe182d9dc3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '357817cd041b4902fff52f4485bb62e3') in 0.008943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Mobile/Bus_2.prefab
+  artifactKey: Guid(d3a9898e22901924b98de4fff69bf9e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Mobile/Bus_2.prefab using Guid(d3a9898e22901924b98de4fff69bf9e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'febe5be9a4a56f107302304fa608de63') in 0.005095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/cars_albedo_2.tif
+  artifactKey: Guid(7cb8cb42b17248f4a993ba742a595e5f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Textures/cars_albedo_2.tif using Guid(7cb8cb42b17248f4a993ba742a595e5f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'e4cb8b8b88052249abe4bad53c6ad8ad') in 0.064418 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Police_car.prefab
+  artifactKey: Guid(f463242ba59e68243b7a693d4f0cfc18) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Police_car.prefab using Guid(f463242ba59e68243b7a693d4f0cfc18) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'f91f6f190f857ffd7db6264395960186') in 0.003589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Simple Vehicle Pack/Models/car_2.FBX
+  artifactKey: Guid(209fadb19c7c1f149830b00ad9d0c764) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Models/car_2.FBX using Guid(209fadb19c7c1f149830b00ad9d0c764) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ab8cb49eafde0e8b36c1000b56ba0e1e') in 0.019675 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Modeller/platform1.fbx
+  artifactKey: Guid(8604021093d1b47a598723f30dde5b38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Modeller/platform1.fbx using Guid(8604021093d1b47a598723f30dde5b38) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b3a07c6f93d66e177e38d0e546d265ba') in 0.024420 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 59
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Simple Vehicle Pack/Models/road_4.FBX
+  artifactKey: Guid(faa37065c55ee5e46ab6e63ac549f8a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Models/road_4.FBX using Guid(faa37065c55ee5e46ab6e63ac549f8a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '30e72f0662e82716f68135811b270b1f') in 0.017708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/cars_AO.tif
+  artifactKey: Guid(bfccf8a69e2d9404da142af497edf1a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Textures/cars_AO.tif using Guid(bfccf8a69e2d9404da142af497edf1a1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'bc2ef0cf4459167c655eb6aff03d70ed') in 0.048521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Car_2.prefab
+  artifactKey: Guid(2dc42346e5313b34c93d598a61994629) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Car_2.prefab using Guid(2dc42346e5313b34c93d598a61994629) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '30000226840c48337da8264cd6db3f68') in 0.004294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'dd328661e76eb41db29d90c52470d4c5') in 0.005352 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000079 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/Mobile/bus_diffuse.tif
+  artifactKey: Guid(4cb0ad4beb219f047ab423d11568d45b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Textures/Mobile/bus_diffuse.tif using Guid(4cb0ad4beb219f047ab423d11568d45b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '3624fcfe605ab74bb900da575e94000f') in 0.021069 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Simple Vehicle Pack/Materials/Cars_2.mat
+  artifactKey: Guid(aa87e04130195564ba9a4d334968abc1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Materials/Cars_2.mat using Guid(aa87e04130195564ba9a4d334968abc1) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '6f6ed1165685ed6cb4c22b18efaba3c8') in 0.106485 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.002256 seconds.
+  path: Assets/Simple Vehicle Pack/Materials/Mobile/Cars_1.mat
+  artifactKey: Guid(fb57deec1f6b9d94b8cf6a09e249fc71) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Materials/Mobile/Cars_1.mat using Guid(fb57deec1f6b9d94b8cf6a09e249fc71) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'ea7b601bcbefd215229bd153cf846872') in 0.018270 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002709 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Taxi.prefab
+  artifactKey: Guid(50477af197889084e8a6d97f2b73b73b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Taxi.prefab using Guid(50477af197889084e8a6d97f2b73b73b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '34e315015475d4562e2bb0d85ca6817d') in 0.004023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Material/images/yesil.png
+  artifactKey: Guid(8de42f1f60a3942c5aba1ffce068436d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Material/images/yesil.png using Guid(8de42f1f60a3942c5aba1ffce068436d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '8581595c710e2e220dcec8be295b1168') in 0.017966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000105 seconds.
+  path: Assets/Simple Vehicle Pack/Demo_scene.unity
+  artifactKey: Guid(506b4ac321e63974fafc66c23659ffe6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Demo_scene.unity using Guid(506b4ac321e63974fafc66c23659ffe6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '82a90d954015d59d18fe73889436ce95') in 0.002190 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Mobile/Car_4.prefab
+  artifactKey: Guid(558e73634b44f39458a7ea4a8a56976a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Mobile/Car_4.prefab using Guid(558e73634b44f39458a7ea4a8a56976a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bdfef3d4911e23500307d342d47b3f5c') in 0.007100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Simple Vehicle Pack/Textures/Mobile/cars_2_diffuse.tif
+  artifactKey: Guid(41d0c53e915d46e49aaae294fe16d245) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Textures/Mobile/cars_2_diffuse.tif using Guid(41d0c53e915d46e49aaae294fe16d245) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '09a44be7c34497b98f06f0a756e31453') in 0.034045 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000118 seconds.
+  path: Assets/Simple Vehicle Pack/Prefabs/Bus_1.prefab
+  artifactKey: Guid(fc4245223e4122142bb14239d44230ef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Simple Vehicle Pack/Prefabs/Bus_1.prefab using Guid(fc4245223e4122142bb14239d44230ef) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '86ccfaf6c2acc9d401639f498dd1ff7d') in 0.005414 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting
