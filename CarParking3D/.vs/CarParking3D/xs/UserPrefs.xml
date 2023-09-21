@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{A6A3780E-4BB1-68B7-1B28-E67405C90752}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Araba.cs">
+    <Files>
+      <File FileName="Assets/Araba.cs" Line="29" Column="6" />
+      <File FileName="Assets/GameManager.cs" Line="102" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CarParking3D" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Script" expanded="True">
+                <Node name="Araba.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="12aa53d8-8fde-4fac-981a-a6f135be527c" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+</Properties>

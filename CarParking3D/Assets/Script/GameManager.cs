@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro; // TEXT MESH PROYU DAHIL EDIYORUZ
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,6 +21,8 @@ public class GameManager : MonoBehaviour
     public Sprite AracGeldiGorseli;
     public TextMeshProUGUI KalanAracSayisi;
     public GameObject[] ArabaCanvasGorselleri;
+    public TextMeshProUGUI[] Textler;
+    public GameObject[] Panellerim;
 
     [Header("-------- PLATFORM AYARLAR")]
     public GameObject Platform_1;
@@ -33,7 +36,12 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-      /*  KalanAracSayisiDegeri = KacArabaOlsun;
+
+        VarsayilanDegerleriKontrolEt();
+
+        KalanAracSayisiDegeri = KacArabaOlsun;
+
+        /*
         KalanAracSayisi.text = KalanAracSayisiDegeri.ToString();
 
           for(int i=0; i< KacArabaOlsun; i++)
@@ -53,10 +61,14 @@ public class GameManager : MonoBehaviour
         {
             Arabalar[AktifAracIndex].SetActive(true);  //Index kactaysa o arabayi aktiflestir diyoruz.
         }
+        else {
+            Kazandin();
+        }
 
-       /*  ArabaCanvasGorselleri[AktifAracIndex-1].GetComponent<Image>().sprite = AracGeldiGorseli; // araba park edince canvastan yesil yap
         KalanAracSayisiDegeri--;
-        KalanAracSayisi.text = KalanAracSayisiDegeri.ToString();   */
+        /*  ArabaCanvasGorselleri[AktifAracIndex-1].GetComponent<Image>().sprite = AracGeldiGorseli; // araba park edince canvastan yesil yap
+         
+         KalanAracSayisi.text = KalanAracSayisiDegeri.ToString();   */
     }
 
     private void Update()
@@ -68,8 +80,79 @@ public class GameManager : MonoBehaviour
              AktifAracIndex++;
         }
 
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            Panellerim[0].SetActive(false);
+        }
+
         Platform_1.transform.Rotate(new Vector3(0, 0, -DonusHizlari[0]), Space.Self); // X Y ayni Z de benim veridigim degerde kendine surekli bir ivme katip don diyoruz. Space.Self kendi ekseninde daha soft donus icin.
 
+    }
+
+    public void Kaybettin()
+    {
+
+        // ------------------------------   BU KOD SATIRI SAYESINDE KAYBETSE BILE ALDIGI ELMASLARI KAYDEDIYORUZ SISTEME !!! ------------------------------
+        PlayerPrefs.SetInt("Elmas", PlayerPrefs.GetInt("Elmas") + ElmasSayisi); // Kaybettigimde elmas sayim kacsa onla bu bolumde topladiklarimi toplayip ata diyorum
+
+        Textler[6].text = PlayerPrefs.GetInt("Elmas").ToString();   // ToString burda bir nevi casting yapiyor gibi dusunebiliriz aldigi degeri stirng yapip texte atiyor.
+        Textler[7].text = SceneManager.GetActiveScene().name;
+        Textler[8].text = (KacArabaOlsun - KalanAracSayisiDegeri).ToString();
+        Textler[9].text = ElmasSayisi.ToString();
+
+        
+        Panellerim[1].SetActive(true);
+    }
+
+    public void Kazandin()
+    {
+        PlayerPrefs.SetInt("Elmas", PlayerPrefs.GetInt("Elmas") + ElmasSayisi); // Kaybettigimde elmas sayim kacsa onla bu bolumde topladiklarimi toplayip ata diyorum
+
+        Textler[2].text = PlayerPrefs.GetInt("Elmas").ToString();   // ToString burda bir nevi casting yapiyor gibi dusunebiliriz aldigi degeri stirng yapip texte atiyor.
+        Textler[3].text = SceneManager.GetActiveScene().name;
+        Textler[4].text = (KacArabaOlsun - KalanAracSayisiDegeri).ToString();
+        Textler[5].text = ElmasSayisi.ToString();
+
+
+        Panellerim[2].SetActive(true);
+    }
+
+
+    //BELLEK YONETIMI
+
+    void VarsayilanDegerleriKontrolEt()
+    {
+        if (!PlayerPrefs.HasKey("Elmas")) //Elmas diye bir string kaydedilmismi bak eger false gelirse bir alta in ve elmas degerini kaydederek basla
+        {
+            PlayerPrefs.SetInt("Elmas", 0);
+            PlayerPrefs.SetInt("Elmas", 0);
+        }
+
+        Textler[0].text = PlayerPrefs.GetInt("Elmas").ToString();   // ToString burda bir nevi casting yapiyor gibi dusunebiliriz aldigi degeri stirng yapip texte atiyor.
+        Textler[1].text = SceneManager.GetActiveScene().name;
+
+    }
+
+
+    /* void IzleVeDevamEt()
+     {
+
+     }   */
+
+    /* void IzleVeDahaFazlaKazan()
+   {
+
+   }   */
+
+    public void Replay()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // aktif olan sceneindeximi al ve bir daha onu yukle 
+    }
+
+    public void SonrakiLevel()
+    {
+        PlayerPrefs.SetInt("Level", SceneManager.GetActiveScene().buildIndex + 1); // aktif lvye +1 ekle dedik.
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1); // aktif olan sceneindeximi al ve bir daha onu yukle 
     }
 
 }
