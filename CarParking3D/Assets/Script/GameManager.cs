@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] ArabaCanvasGorselleri;
     public TextMeshProUGUI[] Textler;
     public GameObject[] Panellerim;
+    public GameObject[] TapToButonlar;
 
     [Header("-------- PLATFORM AYARLAR")]
     public GameObject Platform_1;
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
     public void YeniArabaGetir() // YENI ARABAYI OYUNDA AKTIF ETMEK ICIN CAGIRIYORUZ.
     {
          DurusNoktasi.SetActive(true); // kapali olan durus noktasini tekrar acmam gerek 1 araba park edildigi zaman ac diyorum tekrar
+         KalanAracSayisiDegeri--;
 
         if (AktifAracIndex < KacArabaOlsun) // hala oyunu bitirmemis demektir 5 araba var fakat biz daha 2cisindeyiz gibi dusun
         {
@@ -65,7 +67,7 @@ public class GameManager : MonoBehaviour
             Kazandin();
         }
 
-        KalanAracSayisiDegeri--;
+        
         /*  ArabaCanvasGorselleri[AktifAracIndex-1].GetComponent<Image>().sprite = AracGeldiGorseli; // araba park edince canvastan yesil yap
          
          KalanAracSayisi.text = KalanAracSayisiDegeri.ToString();   */
@@ -102,6 +104,17 @@ public class GameManager : MonoBehaviour
 
         
         Panellerim[1].SetActive(true);
+        Invoke("KaybettinButonuOrtayaCikart", 2f);   // GECIKMELI METOD  CAGIRMA KOMUTU ( INVOKE ) Invoke Metodu belli bir sure sonra bir metodu cagirmak istersek kullaniyoruz
+    }
+
+    void KaybettinButonuOrtayaCikart()
+    {
+        TapToButonlar[0].SetActive(true);
+    }
+
+    void KazandinButonuOrtayaCikart()
+    {
+        TapToButonlar[1].SetActive(true);
     }
 
     public void Kazandin()
@@ -115,6 +128,7 @@ public class GameManager : MonoBehaviour
 
 
         Panellerim[2].SetActive(true);
+        Invoke("KazandinButonuOrtayaCikart", 2f);   // GECIKMELI METOD  CAGIRMA KOMUTU ( INVOKE ) Invoke Metodu belli bir sure sonra bir metodu cagirmak istersek kullaniyoruz
     }
 
 
@@ -125,7 +139,7 @@ public class GameManager : MonoBehaviour
         if (!PlayerPrefs.HasKey("Elmas")) //Elmas diye bir string kaydedilmismi bak eger false gelirse bir alta in ve elmas degerini kaydederek basla
         {
             PlayerPrefs.SetInt("Elmas", 0);
-            PlayerPrefs.SetInt("Elmas", 0);
+            PlayerPrefs.SetInt("Level", 1);
         }
 
         Textler[0].text = PlayerPrefs.GetInt("Elmas").ToString();   // ToString burda bir nevi casting yapiyor gibi dusunebiliriz aldigi degeri stirng yapip texte atiyor.
