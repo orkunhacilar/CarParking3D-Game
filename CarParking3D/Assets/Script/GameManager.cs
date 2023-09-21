@@ -1,27 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro; // TEXT MESH PROYU DAHIL EDIYORUZ
 
 public class GameManager : MonoBehaviour
 {
 
     [Header("-------- ARABA AYARLARI")]
     public GameObject[] Arabalar;
+    public GameObject[] ArabaCanvasGorselleri;
+    public Sprite AracGeldiGorseli;
     public GameObject DurusNoktasi;
-    public int KacArabaOlsun; // bu lvda kac tane araba olsun gibi dusun 
+    public int KacArabaOlsun; // bu lvda kac tane araba olsun gibi dusun
+    int KalanAracSayisiDegeri;
     int AktifAracIndex=0;
+    public TextMeshProUGUI KalanAracSayisi;
 
     [Header("-------- PLATFORM AYARLAR")]
     public GameObject Platform_1;
     public GameObject Platform_2;
     public float[] DonusHizlari;
 
+
     private void Start()
     {
-        /*  for(int i=0; i< KacArabaOlsun; i++)
-          {
+      /*  KalanAracSayisiDegeri = KacArabaOlsun;
+        KalanAracSayisi.text = KalanAracSayisiDegeri.ToString();
 
-          } */
+          for(int i=0; i< KacArabaOlsun; i++)
+          {
+            ArabaCanvasGorselleri[i].SetActive(true); // kac araba ile oynaniyosa o kadar beyaz renkteki araba img goster ac diyoruz.
+          }  */
 
        
 
@@ -35,6 +45,10 @@ public class GameManager : MonoBehaviour
         {
             Arabalar[AktifAracIndex].SetActive(true);  //Index kactaysa o arabayi aktiflestir diyoruz.
         }
+
+       /*  ArabaCanvasGorselleri[AktifAracIndex-1].GetComponent<Image>().sprite = AracGeldiGorseli; // araba park edince canvastan yesil yap
+        KalanAracSayisiDegeri--;
+        KalanAracSayisi.text = KalanAracSayisiDegeri.ToString();   */
     }
 
     private void Update()
