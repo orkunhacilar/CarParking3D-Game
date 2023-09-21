@@ -13,7 +13,7 @@ public class Araba : MonoBehaviour
     //
     //
     public GameObject[] Tekerizleri;
-    public Transform parent; // Bir ust cismin icine arabayi atalim ki arabada platform ile beraber donsun
+    public Transform parent; // Bir ust cismin icine arabayi atalim ki arabada platform ile beraber donsun     ---------- PARENT
     public GameManager _GameManager;
 
     
@@ -31,12 +31,17 @@ public class Araba : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision) // box coliderlar yardimi ile carpismalar olunca tagler uzerinde islem yapmamizi saglayan fonksyon
     {
-        if (collision.gameObject.CompareTag("DurusNoktasi")) //eger tagi Parking olan bir cisme carparsa
+
+
+        // rigitbody varken Triger ile calismazken boyle yaptik
+       /* if (collision.gameObject.CompareTag("DurusNoktasi")) //eger tagi Parking olan bir cisme carparsa
         {
             DurusNoktasiDurumu = true;
             _GameManager.DurusNoktasi.SetActive(false); // ilk araba carpinca durusnoktasini kapat ki ileri gitmeye calistigi zaman kuvvetle karsilasmasin
-        }
-        else if (collision.gameObject.CompareTag("Parking")) //eger tagi Parking olan bir cisme carparsa
+        } */
+
+
+        if (collision.gameObject.CompareTag("Parking")) //eger tagi Parking olan bir cisme carparsa
         {
             ilerle = false;
             Tekerizleri[0].SetActive(false); //Teker izlerini parking box coliderina carpinca kapat.
@@ -45,26 +50,42 @@ public class Araba : MonoBehaviour
             transform.SetParent(parent); // disardan verdigim objeyi ana cismimin yani arabamin parenti yap diyoruz.
 
             //ARABA CARPTIGI ZAMAN PARK ALANINA BUTUN KONUM VE ROTASYONLARINI KITLE KI DEGISIK GORUNTULER OLUSMASIN
-            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ |
-                RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ; 
+         //   GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ |
+           //     RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ; 
 
              _GameManager.YeniArabaGetir();
         }
 
-        if (collision.gameObject.CompareTag("OrtaGobek")) 
-        {
-            Destroy(gameObject); //Canvas cikicak // obje havuzunda arabayi false yapacagim.
-            _GameManager.Kaybettin();//Panel cikaran metod
-        }
+        
         else if (collision.gameObject.CompareTag("Araba"))
         {
             Destroy(gameObject); // obje havuzunda arabayi false yapacagim.
             _GameManager.Kaybettin(); //Panel cikaran metod
         }
-        else if (collision.gameObject.CompareTag("Elmas"))
+        
+    }
+
+    private void OnTriggerEnter(Collider other) // Fiziksel kuvvet gibi seylere ihtiyacimiz yoksa rigitbody kullanmadan box collider ve triger ile kolayca cozuyoruz.
+    {
+        if (other.CompareTag("DurusNoktasi"))
         {
-            collision.gameObject.SetActive(false); // Carpmis oldugumuz o objeyide pasiflestirmis oluyoruz.
+            DurusNoktasiDurumu = true;
+
+        }
+        else if (other.CompareTag("Elmas"))
+        {
+            other.gameObject.SetActive(false); // Carpmis oldugumuz o objeyide pasiflestirmis oluyoruz.
             _GameManager.ElmasSayisi++;
+        }
+        else if (other.CompareTag("OrtaGobek"))
+        {
+            Destroy(gameObject); //Canvas cikicak // obje havuzunda arabayi false yapacagim.
+            _GameManager.Kaybettin();//Panel cikaran metod
+        }
+        else if (other.CompareTag("On_Parking")) // onde duran kucuk gorunmez collidera carparsan
+        {
+            //other.gameObject.GetComponent<On_Parking>().ParkingAktiflestir(); //git o objeye eris onun icinde scripte eris ordan o metodu cagir dedik.
+            other.gameObject.GetComponent<On_Parking>().Parking.SetActive(true);
         }
     }
 }

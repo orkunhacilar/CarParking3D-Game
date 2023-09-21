@@ -61,6 +61,7 @@
     <Compile Include="Assets/LevelYukle.cs" />
     <Compile Include="Assets/Script/Araba.cs" />
     <Compile Include="Assets/Script/GameManager.cs" />
+    <Compile Include="Assets/On_Parking.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

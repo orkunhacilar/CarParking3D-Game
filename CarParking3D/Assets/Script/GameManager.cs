@@ -10,7 +10,6 @@ public class GameManager : MonoBehaviour
 
     [Header("-------- ARABA AYARLARI")]
     public GameObject[] Arabalar;
-    public GameObject DurusNoktasi;
     public int KacArabaOlsun; // bu lvda kac tane araba olsun gibi dusun
     int KalanAracSayisiDegeri;
     int AktifAracIndex=0;
@@ -56,7 +55,7 @@ public class GameManager : MonoBehaviour
 
     public void YeniArabaGetir() // YENI ARABAYI OYUNDA AKTIF ETMEK ICIN CAGIRIYORUZ.
     {
-         DurusNoktasi.SetActive(true); // kapali olan durus noktasini tekrar acmam gerek 1 araba park edildigi zaman ac diyorum tekrar
+         
          KalanAracSayisiDegeri--;
 
         if (AktifAracIndex < KacArabaOlsun) // hala oyunu bitirmemis demektir 5 araba var fakat biz daha 2cisindeyiz gibi dusun
@@ -95,7 +94,7 @@ public class GameManager : MonoBehaviour
     {
 
         // ------------------------------   BU KOD SATIRI SAYESINDE KAYBETSE BILE ALDIGI ELMASLARI KAYDEDIYORUZ SISTEME !!! ------------------------------
-        PlayerPrefs.SetInt("Elmas", PlayerPrefs.GetInt("Elmas") + ElmasSayisi); // Kaybettigimde elmas sayim kacsa onla bu bolumde topladiklarimi toplayip ata diyorum
+       // PlayerPrefs.SetInt("Elmas", PlayerPrefs.GetInt("Elmas") + ElmasSayisi); // Kaybettigimde elmas sayim kacsa onla bu bolumde topladiklarimi toplayip ata diyorum
 
         Textler[6].text = PlayerPrefs.GetInt("Elmas").ToString();   // ToString burda bir nevi casting yapiyor gibi dusunebiliriz aldigi degeri stirng yapip texte atiyor.
         Textler[7].text = SceneManager.GetActiveScene().name;

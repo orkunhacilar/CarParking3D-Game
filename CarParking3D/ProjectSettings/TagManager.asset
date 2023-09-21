@@ -10,6 +10,7 @@ TagManager:
   - Araba
   - DurusNoktasi
   - Elmas
+  - On_Parking
   layers:
   - Default
   - TransparentFX
