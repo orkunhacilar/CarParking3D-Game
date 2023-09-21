@@ -15,6 +15,7 @@ public class Araba : MonoBehaviour
     public GameObject[] Tekerizleri;
     public Transform parent; // Bir ust cismin icine arabayi atalim ki arabada platform ile beraber donsun     ---------- PARENT
     public GameManager _GameManager;
+    public GameObject ParcPoint;
 
     
 
@@ -43,9 +44,7 @@ public class Araba : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Parking")) //eger tagi Parking olan bir cisme carparsa
         {
-            ilerle = false;
-            Tekerizleri[0].SetActive(false); //Teker izlerini parking box coliderina carpinca kapat.
-            Tekerizleri[1].SetActive(false); // Teker izlerini parking box coliderina carpinca kapat.
+            ArabaTeknikIslemi();
 
             transform.SetParent(parent); // disardan verdigim objeyi ana cismimin yani arabamin parenti yap diyoruz.
 
@@ -59,10 +58,19 @@ public class Araba : MonoBehaviour
         
         else if (collision.gameObject.CompareTag("Araba"))
         {
-            Destroy(gameObject); // obje havuzunda arabayi false yapacagim.
+            _GameManager.CarpmaEfekti.transform.position = ParcPoint.transform.position;
+            _GameManager.CarpmaEfekti.Play();
+            ArabaTeknikIslemi();
             _GameManager.Kaybettin(); //Panel cikaran metod
         }
         
+    }
+
+    void ArabaTeknikIslemi()
+    {
+        ilerle = false;
+        Tekerizleri[0].SetActive(false); //Teker izlerini parking box coliderina carpinca kapat.
+        Tekerizleri[1].SetActive(false); // Teker izlerini parking box coliderina carpinca kapat.
     }
 
     private void OnTriggerEnter(Collider other) // Fiziksel kuvvet gibi seylere ihtiyacimiz yoksa rigitbody kullanmadan box collider ve triger ile kolayca cozuyoruz.
@@ -79,7 +87,9 @@ public class Araba : MonoBehaviour
         }
         else if (other.CompareTag("OrtaGobek"))
         {
-            Destroy(gameObject); //Canvas cikicak // obje havuzunda arabayi false yapacagim.
+            _GameManager.CarpmaEfekti.transform.position = ParcPoint.transform.position;
+            _GameManager.CarpmaEfekti.Play();
+            ArabaTeknikIslemi();
             _GameManager.Kaybettin();//Panel cikaran metod
         }
         else if (other.CompareTag("On_Parking")) // onde duran kucuk gorunmez collidera carparsan

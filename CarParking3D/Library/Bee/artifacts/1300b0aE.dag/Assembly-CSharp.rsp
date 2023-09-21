@@ -355,10 +355,10 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.9f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/LevelYukle.cs"
-"Assets/On_Parking.cs"
 "Assets/Script/Araba.cs"
 "Assets/Script/GameManager.cs"
+"Assets/Script/LevelYukle.cs"
+"Assets/Script/On_Parking.cs"
 -langversion:9.0
 
 /deterministic

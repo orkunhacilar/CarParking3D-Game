@@ -28,14 +28,17 @@ public class GameManager : MonoBehaviour
     public GameObject Platform_1;
     public GameObject Platform_2;
     public float[] DonusHizlari;
+    bool DonusVarmi;
 
     [Header("-------- LEVEL AYARLAR")]
     public int ElmasSayisi;
+    public ParticleSystem CarpmaEfekti;
 
 
 
     private void Start()
     {
+        DonusVarmi = true;
 
         VarsayilanDegerleriKontrolEt();
 
@@ -86,13 +89,14 @@ public class GameManager : MonoBehaviour
             Panellerim[0].SetActive(false);
         }
 
+        if(DonusVarmi)
         Platform_1.transform.Rotate(new Vector3(0, 0, -DonusHizlari[0]), Space.Self); // X Y ayni Z de benim veridigim degerde kendine surekli bir ivme katip don diyoruz. Space.Self kendi ekseninde daha soft donus icin.
 
     }
 
     public void Kaybettin()
     {
-
+        DonusVarmi = false;
         // ------------------------------   BU KOD SATIRI SAYESINDE KAYBETSE BILE ALDIGI ELMASLARI KAYDEDIYORUZ SISTEME !!! ------------------------------
        // PlayerPrefs.SetInt("Elmas", PlayerPrefs.GetInt("Elmas") + ElmasSayisi); // Kaybettigimde elmas sayim kacsa onla bu bolumde topladiklarimi toplayip ata diyorum
 
