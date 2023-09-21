@@ -4398,3 +4398,110 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 745.556099 seconds.
+  path: Assets/UI_2/araba.png
+  artifactKey: Guid(7036ffcf6b69d4384934adcf7be447df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_2/araba.png using Guid(7036ffcf6b69d4384934adcf7be447df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '721dc7993dd1249c3b577e40f425c8d6') in 0.053993 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.656790 seconds.
+  path: Assets/UI_2/ElmasCizgisiz.png
+  artifactKey: Guid(cfd0c01c19e7d4b53b25393a0e331b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_2/ElmasCizgisiz.png using Guid(cfd0c01c19e7d4b53b25393a0e331b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '8beea5cb68c94810d305b358327be2cd') in 0.008358 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 4.224329 seconds.
+  path: Assets/UI_2/ElmasCizgisiz.png
+  artifactKey: Guid(cfd0c01c19e7d4b53b25393a0e331b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UI_2/ElmasCizgisiz.png using Guid(cfd0c01c19e7d4b53b25393a0e331b10) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'aea7989e96f8e6018660b859d462f3f4') in 0.030171 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 162.412900 seconds.
+  path: Assets/Sprite/UI_2
+  artifactKey: Guid(2b9b9b99448ae4ff29f43a2d0b6bc26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI_2 using Guid(2b9b9b99448ae4ff29f43a2d0b6bc26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d8f3605716368a1dcbc1f6d9bd9862') in 0.000487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2211.746688 seconds.
+  path: Assets/Sprite/UI_2/araba.png
+  artifactKey: Guid(7036ffcf6b69d4384934adcf7be447df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI_2/araba.png using Guid(7036ffcf6b69d4384934adcf7be447df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'a8a080394248018546687df82d9f8c52') in 0.010945 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000153 seconds.
+  path: Assets/Sprite/UI_2/reklamizle.png
+  artifactKey: Guid(fae7598c6f7a347678d58003921e9b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI_2/reklamizle.png using Guid(fae7598c6f7a347678d58003921e9b8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'eef6a78e46371adff4ef3d7dd600b95f') in 0.010362 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Sprite/UI_2/kaybettin.png
+  artifactKey: Guid(c1f67541b914348e59cd34bdd120cefd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI_2/kaybettin.png using Guid(c1f67541b914348e59cd34bdd120cefd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '085fe2544a8d1a7cc49a48548657570b') in 0.015401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Sprite/UI_2/ayarlar.png
+  artifactKey: Guid(f2cac94ac3d2c46d48b259c90bc86704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI_2/ayarlar.png using Guid(f2cac94ac3d2c46d48b259c90bc86704) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '0219c6d434015c10e3d45b2dad6a0224') in 0.009925 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Sprite/UI_2/bosBeyaz.png
+  artifactKey: Guid(d782b5a30fc284a38aa7820834628314) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI_2/bosBeyaz.png using Guid(d782b5a30fc284a38aa7820834628314) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'cddc9d0451a119db6f7badeffc53f9f1') in 0.010300 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Sprite/UI_2/ozellestir.png
+  artifactKey: Guid(c63de914c94884b908ee435c72fdf579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI_2/ozellestir.png using Guid(c63de914c94884b908ee435c72fdf579) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '7090c95b9ecf74ce61fbb74862142c67') in 0.018808 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Sprite/UI_2/kazandin.png
+  artifactKey: Guid(0713cff21733642acbd122f799144ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI_2/kazandin.png using Guid(0713cff21733642acbd122f799144ab0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '17364374c79ed57b19e818edf1e66f5e') in 0.016308 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Sprite/UI_2/Elmas.png
+  artifactKey: Guid(6255cfdf71c59406d82793daea997bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/UI_2/Elmas.png using Guid(6255cfdf71c59406d82793daea997bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '9abab4575790a27baaad56d33f10615b') in 0.012590 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
