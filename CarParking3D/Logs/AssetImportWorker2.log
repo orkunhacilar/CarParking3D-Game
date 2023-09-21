@@ -805,3 +805,93 @@ Start importing Assets/Material/images/yesil.png using Guid(8de42f1f60a3942c5aba
  -> (artifact id: 'ec9f8d6580dd7a07f1fc639eb8e69de2') in 0.006067 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 694.726097 seconds.
+  path: Assets/Material/Beyaz.mat
+  artifactKey: Guid(af603b0874d3d4a1389c9bdda82681f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Beyaz.mat using Guid(af603b0874d3d4a1389c9bdda82681f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'ea5fdd8d7668a8f4c0544680cbee0611') in 0.059983 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Material/Siyah.mat
+  artifactKey: Guid(18866583a8b3840e090cb0350a99fa47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Siyah.mat using Guid(18866583a8b3840e090cb0350a99fa47) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '11969e3ce3fd4f557391ece2cc49a556') in 0.006505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Material/Mavi.mat
+  artifactKey: Guid(484cfd23f244847008e7d06c343e104d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Mavi.mat using Guid(484cfd23f244847008e7d06c343e104d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: '0c27cd490b18c6424227bfa3f4e08ff7') in 0.007869 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Material/Sari.mat
+  artifactKey: Guid(dad77bec04e8542c8bc532b0c3289ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Sari.mat using Guid(dad77bec04e8542c8bc532b0c3289ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'd60c9ad2a5bc0f53e944a18ec486c13e') in 0.007160 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Material/Mor.mat
+  artifactKey: Guid(4b08bf5621d2c4ee6b61b58f38152e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Mor.mat using Guid(4b08bf5621d2c4ee6b61b58f38152e91) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'f73fa4b37ad24e34aa14526c498f7be6') in 0.009078 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Material/Gri.mat
+  artifactKey: Guid(fd843fe0e096b40a09974dd5c2a02f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Material/Gri.mat using Guid(fd843fe0e096b40a09974dd5c2a02f46) Importer(815301076,1909f56bfc062723c751e8b465ee728b) WARNING: RGBA Compressed ASTC6X6 UNorm format is not supported, decompressing texture
+ -> (artifact id: 'd3d5ee2016cafa8915ee0dd43338b72c') in 0.006737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 112.224738 seconds.
+  path: Assets/Modeller/Platform3.fbx
+  artifactKey: Guid(ebbadaeef7a054c029eb07062e7f8cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modeller/Platform3.fbx using Guid(ebbadaeef7a054c029eb07062e7f8cc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d2e9353490efc4bd44cb5d8246c33a') in 0.138447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 59
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Simple Vehicle Pack/Models/police_car.FBX
+  artifactKey: Guid(442255f864e16934790fbb3b49639885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Vehicle Pack/Models/police_car.FBX using Guid(442255f864e16934790fbb3b49639885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6c1d31cef64703d276c408a6e25e3e8') in 0.058457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 30
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Modeller/Platform2.fbx
+  artifactKey: Guid(83c7b28f4a7f7403daca1a0a8e6fd118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modeller/Platform2.fbx using Guid(83c7b28f4a7f7403daca1a0a8e6fd118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806ce46e66b09ec831d44190cb0e9a0c') in 0.105523 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 64
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Modeller/Platform_4.fbx
+  artifactKey: Guid(6be98a1734c124462b29ae586bfae616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modeller/Platform_4.fbx using Guid(6be98a1734c124462b29ae586bfae616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4278e5c2ab569781eb4320d7ac29ab4') in 0.088786 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 54
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting

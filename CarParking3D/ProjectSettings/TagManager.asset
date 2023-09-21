@@ -7,6 +7,8 @@ TagManager:
   - OrtaGobek
   - Platform
   - Parking
+  - Araba
+  - DurusNoktasi
   layers:
   - Default
   - TransparentFX
