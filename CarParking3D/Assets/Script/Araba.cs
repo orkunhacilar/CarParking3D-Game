@@ -59,5 +59,10 @@ public class Araba : MonoBehaviour
         {
             Destroy(gameObject); // obje havuzunda arabayi false yapacagim.
         }
+        else if (collision.gameObject.CompareTag("Elmas"))
+        {
+            collision.gameObject.SetActive(false); // Carpmis oldugumuz o objeyide pasiflestirmis oluyoruz.
+            _GameManager.ElmasSayisi++;
+        }
     }
 }
