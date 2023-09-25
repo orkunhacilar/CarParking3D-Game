@@ -34,11 +34,14 @@ public class GameManager : MonoBehaviour
     public int ElmasSayisi;
     public ParticleSystem CarpmaEfekti;
     public AudioSource[] Sesler;
+    public bool YukselecekPlatformVarmi;
+    bool DokunmaKilidi;
 
 
 
     private void Start()
     {
+        DokunmaKilidi = true;
         DonusVarmi = true;
 
         VarsayilanDegerleriKontrolEt();
@@ -79,23 +82,36 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.G))
+        if(Input.touchCount == 1) // parmak dokundugunda burasi tetiklensin
         {
-             Arabalar[AktifAracIndex].GetComponent<Araba>().ilerle = true; //Araba objesinin Araba scriptine ulas ordaki ilerleriyi true yap
-             AktifAracIndex++;
+            Touch touch = Input.GetTouch(0); // ilk dokunusu al dedik
+
+            if(touch.phase == TouchPhase.Began) // eger dokunmaya basladiysam
+            {
+                if (DokunmaKilidi)
+                {
+                    Panellerim[0].SetActive(false);
+                    Panellerim[3].SetActive(true);
+                    DokunmaKilidi = false;
+                }
+                else
+                {
+                    Arabalar[AktifAracIndex].GetComponent<Araba>().ilerle = true; //Araba objesinin Araba scriptine ulas ordaki ilerleriyi true yap
+                    AktifAracIndex++;
+                }
+            }
+
         }
 
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            Panellerim[0].SetActive(false);
-            Panellerim[3].SetActive(true);
 
-        }
+        
 
         if (DonusVarmi)
         {
-            Platform_1.transform.Rotate(new Vector3(0, 0, DonusHizlari[0]), Space.Self); // X Y ayni Z de benim veridigim degerde kendine surekli bir ivme katip don diyoruz. Space.Self kendi ekseninde daha soft donus icin.
-            Platform_2.transform.Rotate(new Vector3(0, 0, -DonusHizlari[1]), Space.Self); // X Y ayni Z de benim veridigim degerde kendine surekli bir ivme katip don diyoruz. Space.Self kendi ekseninde daha soft donus icin.
+
+            Platform_1.transform.Rotate(new Vector3(0, 0, -DonusHizlari[0]), Space.Self); // X Y ayni Z de benim veridigim degerde kendine surekli bir ivme katip don diyoruz. Space.Self kendi ekseninde daha soft donus icin.
+            if(Platform_2!=null)
+            Platform_2.transform.Rotate(new Vector3(0, 0, DonusHizlari[1]), Space.Self); // X Y ayni Z de benim veridigim degerde kendine surekli bir ivme katip don diyoruz. Space.Self kendi ekseninde daha soft donus icin.
 
         }
 
@@ -150,11 +166,7 @@ public class GameManager : MonoBehaviour
 
     void VarsayilanDegerleriKontrolEt()
     {
-        if (!PlayerPrefs.HasKey("Elmas")) //Elmas diye bir string kaydedilmismi bak eger false gelirse bir alta in ve elmas degerini kaydederek basla
-        {
-            PlayerPrefs.SetInt("Elmas", 0);
-            PlayerPrefs.SetInt("Level", 1);
-        }
+        
 
         Textler[0].text = PlayerPrefs.GetInt("Elmas").ToString();   // ToString burda bir nevi casting yapiyor gibi dusunebiliriz aldigi degeri stirng yapip texte atiyor.
         Textler[1].text = SceneManager.GetActiveScene().name;
@@ -174,7 +186,8 @@ public class GameManager : MonoBehaviour
 
     public void Replay()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // aktif olan sceneindeximi al ve bir daha onu yukle 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // aktif olan sceneindeximi al ve bir daha onu yukle
+        
     }
 
     public void SonrakiLevel()

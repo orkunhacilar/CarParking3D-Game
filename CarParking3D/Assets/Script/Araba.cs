@@ -9,13 +9,16 @@ public class Araba : MonoBehaviour
 
     public bool ilerle;
     bool DurusNoktasiDurumu = false;
-    
+    float YukselmeDeger;
+    bool PlatformYukselt;
+
     //
     //
     public GameObject[] Tekerizleri;
     public Transform parent; // Bir ust cismin icine arabayi atalim ki arabada platform ile beraber donsun     ---------- PARENT
     public GameManager _GameManager;
     public GameObject ParcPoint;
+    
 
     
 
@@ -27,6 +30,21 @@ public class Araba : MonoBehaviour
             transform.Translate(8f * Time.deltaTime * transform.forward); // arabaya ileri dogru bu hizda ilerlet.
         if (ilerle)
             transform.Translate(15f * Time.deltaTime * transform.forward); // arabaya ileri dogru bu hizda ilerlet.
+        if (PlatformYukselt)
+        {
+
+            if(YukselmeDeger > _GameManager.Platform_1.transform.position.y)
+            {
+                //yavasca mevcut oldugu konumdan soyledigim konuma gec LERP METODU
+                _GameManager.Platform_1.transform.position = Vector3.Lerp(_GameManager.Platform_1.transform.position, new Vector3(_GameManager.Platform_1.transform.position.x, _GameManager.Platform_1.transform.position.y + 1.3f, _GameManager.Platform_1.transform.position.z), .010f);
+
+            }else
+            {
+                PlatformYukselt = false;
+            }
+
+
+        }
     }
 
 
@@ -49,10 +67,18 @@ public class Araba : MonoBehaviour
             transform.SetParent(parent); // disardan verdigim objeyi ana cismimin yani arabamin parenti yap diyoruz.
 
             //ARABA CARPTIGI ZAMAN PARK ALANINA BUTUN KONUM VE ROTASYONLARINI KITLE KI DEGISIK GORUNTULER OLUSMASIN
-         //   GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ |
-           //     RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ; 
+            //   GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ |
+            //     RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
 
-             _GameManager.YeniArabaGetir();
+
+            if (_GameManager.YukselecekPlatformVarmi)
+            {
+                YukselmeDeger = _GameManager.Platform_1.transform.position.y + 1.3f;
+                PlatformYukselt = true;
+            }
+
+
+            _GameManager.YeniArabaGetir();
         }
 
         
