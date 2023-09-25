@@ -92,8 +92,13 @@ public class GameManager : MonoBehaviour
 
         }
 
-        if(DonusVarmi)
-        Platform_1.transform.Rotate(new Vector3(0, 0, -DonusHizlari[0]), Space.Self); // X Y ayni Z de benim veridigim degerde kendine surekli bir ivme katip don diyoruz. Space.Self kendi ekseninde daha soft donus icin.
+        if (DonusVarmi)
+        {
+            Platform_1.transform.Rotate(new Vector3(0, 0, DonusHizlari[0]), Space.Self); // X Y ayni Z de benim veridigim degerde kendine surekli bir ivme katip don diyoruz. Space.Self kendi ekseninde daha soft donus icin.
+            Platform_2.transform.Rotate(new Vector3(0, 0, -DonusHizlari[1]), Space.Self); // X Y ayni Z de benim veridigim degerde kendine surekli bir ivme katip don diyoruz. Space.Self kendi ekseninde daha soft donus icin.
+
+        }
+
 
     }
 
