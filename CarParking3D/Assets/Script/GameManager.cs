@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     [Header("-------- LEVEL AYARLAR")]
     public int ElmasSayisi;
     public ParticleSystem CarpmaEfekti;
+    public AudioSource[] Sesler;
 
 
 
@@ -105,7 +106,8 @@ public class GameManager : MonoBehaviour
         Textler[8].text = (KacArabaOlsun - KalanAracSayisiDegeri).ToString();
         Textler[9].text = ElmasSayisi.ToString();
 
-        
+        Sesler[1].Play();
+        Sesler[3].Play();
         Panellerim[1].SetActive(true);
         Invoke("KaybettinButonuOrtayaCikart", 2f);   // GECIKMELI METOD  CAGIRMA KOMUTU ( INVOKE ) Invoke Metodu belli bir sure sonra bir metodu cagirmak istersek kullaniyoruz
     }
@@ -129,7 +131,7 @@ public class GameManager : MonoBehaviour
         Textler[4].text = (KacArabaOlsun - KalanAracSayisiDegeri).ToString();
         Textler[5].text = ElmasSayisi.ToString();
 
-
+        Sesler[2].Play();
         Panellerim[2].SetActive(true);
         Invoke("KazandinButonuOrtayaCikart", 2f);   // GECIKMELI METOD  CAGIRMA KOMUTU ( INVOKE ) Invoke Metodu belli bir sure sonra bir metodu cagirmak istersek kullaniyoruz
     }
