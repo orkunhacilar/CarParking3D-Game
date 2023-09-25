@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{A6A3780E-4BB1-68B7-1B28-E67405C90752}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Araba.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2caccdaa-d374-4446-b219-3f4d45da4118" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/GameManager.cs">
     <Files>
-      <File FileName="Assets/Script/GameManager.cs" Line="94" Column="1" />
-      <File FileName="Assets/LevelYukle.cs" Line="16" Column="1" />
-      <File FileName="Assets/Script/Araba.cs" Line="58" Column="9" />
-      <File FileName="Assets/On_Parking.cs" Line="12" Column="1" />
+      <File FileName="Assets/Script/GameManager.cs" Line="76" Column="10" />
+      <File FileName="Assets/Script/Araba.cs" Line="103" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,10 +21,4 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="12aa53d8-8fde-4fac-981a-a6f135be527c" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
 </Properties>

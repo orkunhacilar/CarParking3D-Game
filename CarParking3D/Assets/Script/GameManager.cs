@@ -45,13 +45,13 @@ public class GameManager : MonoBehaviour
 
         KalanAracSayisiDegeri = KacArabaOlsun;
 
-        /*
-        KalanAracSayisi.text = KalanAracSayisiDegeri.ToString();
+        
+       // KalanAracSayisi.text = KalanAracSayisiDegeri.ToString();
 
           for(int i=0; i< KacArabaOlsun; i++)
           {
             ArabaCanvasGorselleri[i].SetActive(true); // kac araba ile oynaniyosa o kadar beyaz renkteki araba img goster ac diyoruz.
-          }  */
+          }  
 
        
 
@@ -71,9 +71,9 @@ public class GameManager : MonoBehaviour
         }
 
         
-        /*  ArabaCanvasGorselleri[AktifAracIndex-1].GetComponent<Image>().sprite = AracGeldiGorseli; // araba park edince canvastan yesil yap
+         ArabaCanvasGorselleri[AktifAracIndex-1].GetComponent<Image>().sprite = AracGeldiGorseli; // araba park edince canvastan yesil yap
          
-         KalanAracSayisi.text = KalanAracSayisiDegeri.ToString();   */
+       //  KalanAracSayisi.text = KalanAracSayisiDegeri.ToString();   
     }
 
     private void Update()
@@ -88,6 +88,8 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
         {
             Panellerim[0].SetActive(false);
+            Panellerim[3].SetActive(true);
+
         }
 
         if(DonusVarmi)
@@ -109,6 +111,7 @@ public class GameManager : MonoBehaviour
         Sesler[1].Play();
         Sesler[3].Play();
         Panellerim[1].SetActive(true);
+        Panellerim[3].SetActive(false);
         Invoke("KaybettinButonuOrtayaCikart", 2f);   // GECIKMELI METOD  CAGIRMA KOMUTU ( INVOKE ) Invoke Metodu belli bir sure sonra bir metodu cagirmak istersek kullaniyoruz
     }
 
@@ -133,6 +136,7 @@ public class GameManager : MonoBehaviour
 
         Sesler[2].Play();
         Panellerim[2].SetActive(true);
+        Panellerim[3].SetActive(false);
         Invoke("KazandinButonuOrtayaCikart", 2f);   // GECIKMELI METOD  CAGIRMA KOMUTU ( INVOKE ) Invoke Metodu belli bir sure sonra bir metodu cagirmak istersek kullaniyoruz
     }
 
